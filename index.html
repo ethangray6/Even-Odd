@@ -27,7 +27,7 @@
     let userName = prompt("Welcome to the Even or Odd Game, Please enter your name to get started: ");
     alert("Welcome " + userName + " Lets get Started.");
     while (cont != "n") {
-        if(cont == "y") {
+        if(cont === "y") {
           randomNumberFirst = Math.floor(Math.random() * 4) + 1;
           randomNumberSecond = Math.floor(Math.random() * 4) + 1;
           combinedNums = randomNumberFirst + randomNumberSecond;
@@ -35,25 +35,25 @@
           alert("1");
           alert("2");
           alert("3");
-          if(combinedNums % 2 == 0 && gChoice == "even") {
+          if(combinedNums % 2 === 0 && gChoice === "even") {
             alert("You were correct it is even! You win!");
             Wins++;
             outcome = "win";
             evenOdd = "even";
           }
-          else if(combinedNums % 2 == 1 && gChoice == "even") {
+          else if(combinedNums % 2 === 1 && gChoice === "even") {
             alert("You were incorrect it is odd! You lose!");
             losses++;
             outcome = "lose";
             evenOdd = "odd";
           }
-          else if(combinedNums % 2 == 1 && gChoice == "odd") {
+          else if(combinedNums % 2 === 1 && gChoice === "odd") {
             alert("You were correct it is odd! You win!");
             Wins++;
             outcome = "win";
             evenOdd = "odd";
           }
-          else if(combinedNums % 2 == 1 && gChoice == "even") {
+          else if(combinedNums % 2 === 1 && gChoice === "even") {
             alert("You were incorrect it is odd! You lose!");
             losses++;
             outcome = "lose";
