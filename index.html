@@ -26,7 +26,7 @@
     let evenOdd;
     let userName = prompt("Welcome to the Even or Odd Game, Please enter your name to get started: ");
     alert("Welcome " + userName + " Lets get Started.");
-    while (cont != "n") {
+    while (cont !== "n") {
         if(cont === "y") {
           randomNumberFirst = Math.floor(Math.random() * 4) + 1;
           randomNumberSecond = Math.floor(Math.random() * 4) + 1;
@@ -64,7 +64,7 @@
           }
         alert(userName + ", you chose " + gChoice", the sum was " + combinedNums + " which is an " + evenOdd + " number, you " + outcome +"!");
       }
-      else if(cont != "y" || cont != "n") {
+      else if(cont !== "y" || cont !== "n") {
         alert("Invalid Entry, please enter y to continue playing or n to end the game session");
       }
     cont = prompt("You " + outcome +"! Current Scores are Wins : " + Wins + " Losses : " + losses + " Would you like to play again? y/n").toLowerCase();
